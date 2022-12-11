@@ -26,7 +26,7 @@
       <img src="img/favicon.ico" alt="">
     </div>
 
-    <!--Navigation-->
+    <!--Desktop Navigation-->
     <nav class="hidden md:flex space-x-6">
       <a class="hover:text-darkGrayBlue" href="">Pricing</a>
       <a class="hover:text-darkGrayBlue" href="">Product</a>
@@ -39,7 +39,25 @@
     <a href="" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight hidden md:block">
       Get Started
     </a>
+
+    <!--Hamburger Icon-->
+    <button id="menu-icon" class="hamburger block md:hidden focus:outline-none">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </button>
+
   </div>
+
+  <!--Mobile Navigation-->
+  <nav id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+    <a class="hover:text-darkGrayBlue" href="">Pricing</a>
+    <a class="hover:text-darkGrayBlue" href="">Product</a>
+    <a class="hover:text-darkGrayBlue" href="">About</a>
+    <a class="hover:text-darkGrayBlue" href="">Career</a>
+    <a class="hover:text-darkGrayBlue" href="">Community</a>
+  </nav>
+
 </header>
 
     <!--Banner -->
@@ -187,7 +205,7 @@
       <section id="tesimonial">
 
         <!--Heading and Testimonial blocks-->
-        <div class="max-w 6xl px-5 mx-auto mt-32 text-center">
+        <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
 
           <!--heading-->
           <div class="h2 text-4xl font-bold text-center">
@@ -233,10 +251,98 @@
               </div>
 
         </div>
-
       </section>
 
+            <!--Callto Action -->
+            <section id="CTA" class="bg-brightRed">
 
+                  <!--flex-box container-->
+                  <div class="flex flex-col container justify-between items-center mx-auto py-12 px-6 space-y-12 md:flex-row md:space-y-0">
 
+                      <!--Text-->
+                        <h2 class="max-w-xl text-center text-white font-bold text-5xl md:text-4xl leading-tight md:text-left">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </h2>
+
+                      <!--Text-->
+                      <div class="max-w-sm mt-12">
+                          <a href="" class="p-3 px-6 bg-white text-brightRed rounded-full shadow-2xl baseline hover:bg-gray-200">
+                            Get Started
+                          </a>
+                      </div>
+
+                  </div>
+            </section>
+
+            <footer class="bg-darkBlue">
+
+              <!-- Flex-box container -->
+              <div class="flex flex-col-reverse container mx-auto px-8 py-12 justify-between space-y-8 md:flex-row md:space-y-0">
+
+                <!--column1-->
+                <div class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:items-start md:space-y-0">
+
+                  <!--Copyright for mobile-->
+                  <div class="mx-auto my-6 text-center text-white md:hidden">
+                    Copyright &copy; 2022, All right reserved
+                  </div>
+
+                  <!--logo-->
+                  <div>
+                    <img src="img/favicon.ico" class="h-8" alt="">
+                  </div>
+
+                  <!--socials-->
+                  <div class="flex items-center justify-between space-x-2">
+                    <a href=""><i class='bx bxl-gmail' ></i></a>
+                    <a href=""><i class='bx bxl-linkedin'></i></a>
+                    <a href=""><i class='bx bxl-github' ></i></a>
+                    <a href=""><i class='bx bxl-twitter'></i></a>
+                  </div>
+                </div>
+
+                <!--column2-->
+                <div class="flex justify-around space-x-32">
+
+                  <!--1st list-->
+                  <div class="flex flex-col space-y-3 text-white">
+                    <a href="#" class="hover:brightRed">Home</a>
+                    <a href="#" class="hover:brightRed">About</a>
+                    <a href="#" class="hover:brightRed">Products</a>
+                    <a href="#" class="hover:brightRed">Pricing</a>
+                  </div>
+
+                  <!--1st list-->
+                  <div class="flex flex-col space-y-3 text-white">
+                    <a href="#" class="hover:brightRed">Careers</a>
+                    <a href="#" class="hover:brightRed">Community</a>
+                    <a href="#" class="hover:brightRed">Privacy Policy</a>
+                  </div>
+                </div>
+
+                <!--Column 3-->
+                <div class="flex flex-col justify-between">
+                  <form>
+                    <div class="flex space-x-3">
+                      <input type="email" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Get Email Updates">
+                      <button class="bg-brightRed px-6 py-2 text-white hover:bg-brightRedLight rounded-full focus:outline-none">
+                        Go</button>
+                    </div>
+                  </form>
+
+                <!--Copyright-->
+                <div class="hidden text-white md:block">
+                  Copyright &copy; 2022, All right reserved
+                </div>
+
+                </div>
+
+              </div>
+
+            </footer>
+
+<script src="js/scripts.js" type="text/javascript">
+
+</script>
 </body>
 </html>
