@@ -18,6 +18,12 @@ module.exports = {
         darkGrayBlue: 'hsl(227, 12%, 61%)',
         Darkblue: 'hsl(223, 12%, 13%)',
         LightGray: 'hsl(0, 0%, 98%)',
+
+        primaryCol: 'hsla(234, 100%, 66%, 1)',
+        secCol: 'hsla(232, 100%, 74%, 1)',
+        thirdCol: 'hsla(227, 100%, 80%, 1)',
+        fourCol: 'hsla(218, 100%, 87%, 1)',
+        fiveCol: 'hsla(184, 100%, 94%, 1)',
       }
     },
   },
