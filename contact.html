@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+       <meta name="description" content="" />
+       <meta name="author" content="" />
+   <title>Manage Contact Us</title>
+  <!--Box Icons styles -->
+       <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+   <!-- Favicon-->
+       <link rel="icon" href="img/favicon.ico" />
+    <!-- Output CSS -->
+       <link rel="stylesheet"  href="css/main.css" />
+       <!--SMTPJS-->
+       <script src="https://smtpjs.com/v3/smtp.js"> </script>
+       <!--Jquery-->
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+
+<!-- Header -->
+<header id="header2" class="relative z-10 p-6">
+
+  <!--Flex-box container-->
+  <div class="flex container mx-auto items-center justify-between">
+
+    <!--logo-->
+    <div  class="flex items-center space-x-2 pt-2 md:space-x-4">
+      <img href="index.html" src="img/logo.svg" alt="">
+      <h2 class="font-bold text-l text-primaryCol md:text-xl">Global Transport Service</h2>
+    </div>
+
+    <!--Desktop Navigation-->
+    <nav class="hidden text-secCol font-bold md:flex space-x-6">
+      <a class="hover:text-thirdCol" href="index.html">Pricing</a>
+      <a class="hover:text-darkGrayBlue" href="">Product</a>
+      <a class="hover:text-darkGrayBlue" href="">About</a>
+      <a class="hover:text-darkGrayBlue" href="contact.html">Contact</a>
+      <a class="hover:text-darkGrayBlue" href="">Community</a>
+    </nav>
+
+    <!--Button-->
+    <a href="" class="p-3 px-6 pt-2 text-white bg-primaryCol rounded-full baseline hover:bg-secCol hidden md:block">
+      Get Started
+    </a>
+
+    <!--Hamburger Icon-->
+    <button id="menu-icon" class="hamburger block mt-4 md:hidden focus:outline-none">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </button>
+
+  </div>
+
+  <!--Mobile Navigation-->
+  <nav id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-6 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+    <a class="hover:text-darkGrayBlue" href="">Pricing</a>
+    <a class="hover:text-darkGrayBlue" href="">Product</a>
+    <a class="hover:text-darkGrayBlue" href="">About</a>
+    <a class="hover:text-darkGrayBlue" href="contact.html">Contact</a>
+    <a class="hover:text-darkGrayBlue" href="">Community</a>
+  </nav>
+
+</header>
+
+
+<!--Banner -->
+<section id = "banner2" class="relative py-8 ">
+
+    <!---flex-box container-->
+  <div class="container flex justify-center item-center px-6 mx-auto mt-10 space-y-0 md:justify-start">
+
+  <!--headline-->
+  <div class="flex flex-col my-20 space-y-4">
+    <h2 class="max-w-md text-white text-4xl font-bold text-center md:text-5xl md:text-left">
+      Contact Us</h2>
+
+      <!--Button-->
+      <div class="flex justify-center text-thirdCol md:justify-start md:ml-2">
+        <a href="" class="hover:text-secCol leading">
+          Home/ &nbsp;
+        </a>
+        <a href="" class="">
+          Contact Us
+        </a>
+      </div>
+  </div>
+
+
+  </div>
+
+
+
+</section>
+
+
+
+            <section id="contact" class="bg-gray-100 py-12" >
+
+              <!--flex-box container-->
+              <div class="container flex flex-col-reverse bg-white justify-between mx-auto px-12 py-8 space-y-2 md:flex-row md:space-y-0">
+
+                <!--info column-->
+                <div class="flex flex-col py-8 items-center space-y-4 md:w-1/2 md:flex-col md:items-start">
+
+
+                    <div class=" text-center md:mt-20 md:text-start">
+
+                      <h3 class="font-bold text-secCol text-xl">
+                        Office Address I
+                      </h3>
+                      <p class="text-darkGrayBlue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, eius.</p>
+
+                    </div>
+
+                    <div class="text-center md:text-start">
+
+                      <h3 class="font-bold text-secCol text-xl" >
+                        Office Address II
+                      </h3>
+                      <p class="text-darkGrayBlue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, eius.</p>
+
+                    </div>
+
+                    <div class="text-center md:text-start">
+
+                      <h3 class="font-bold text-secCol text-xl" >
+                        Tel No.
+                      </h3>
+                      <p class="text-darkGrayBlue">+233 709 4565 001</p>
+                      <p class="text-darkGrayBlue">+233 709 4565 002</p>
+                      <p class="text-darkGrayBlue">+233 709 4565 003</p>
+
+                    </div>
+
+                </div>
+
+                <!--form column-->
+                <div class="flex flex-col p-8  space-y-10 justify-between md:flex-col md:w-1/2 md:space-y-0">
+
+                  <!--heading-->
+                  <h2 class="text-4xl py-4 font-bold text-primaryCol text-center md:text-start">
+                    Send us a message
+                  </h2>
+
+                    <form onsubmit="return false" method="post">
+
+                                  <div class="flex flex-col space-y-8 justify-between">
+                        <input type="text" id="name" class="py-1 px-2 rounded-sm border border-thirdCol focus:outline-none"
+                         placeholder="Your name"  >
+
+                        <input type="email" id="email" class="py-1 px-2 rounded-sm border border-thirdCol focus:outline-none"
+                         placeholder="Your email" >
+
+                        <input type="text" id="phone" class="py-1 px-2 rounded-sm border border-thirdCol focus:outline-none"
+                         placeholder="Phone number" >
+
+                        <textarea id="message" class="py-1 px-2 rounded-sm border border-thirdCol focus:outline-none" rows="5" placeholder="How may we assist you today?"></textarea>
+
+                                    </div>
+                                    <div id="res_mssg" class="text-fiveCol bg-rose-600 text-center text-base my-4 rounded-sm font-bold capitalize">
+                                    </div>
+
+                                    <div class="flex justify-center md:justify-start mt-4" >
+                                      <button type="submit" id="contact-btn" class="p-3 px-8 py-2 text-white bg-primaryCol rounded-full baseline hover:bg-secCol md:block">
+                                        Send
+                                      </button>
+                                    <!--  <input type="submit" class="p-3 px-8 py-2 text-white bg-primaryCol rounded-full baseline hover:bg-secCol md:block">-->
+                                    </div>
+                    </form>
+
+                </div>
+
+              </div>
+
+            </section>
+
+
+            <footer class="bg-darkBlue">
+
+              <!-- Flex-box container -->
+              <div class="flex flex-col-reverse container mx-auto px-8 py-12 justify-between space-y-8 md:flex-row md:space-y-0">
+
+                <!--column1-->
+                <div class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:items-start md:space-y-0">
+
+                  <!--Copyright for mobile-->
+                  <div class="mx-auto my-6 text-center text-white md:hidden">
+                    Copyright &copy; 2022, All right reserved
+                  </div>
+
+                  <!--logo-->
+                  <div class="flex self-center">
+                    <img src="img/logo.svg" class="h-20 w-24" alt="">
+                  </div>
+
+                  <!--socials-->
+                  <div class="flex items-center justify-between text-thirdCol space-x-8">
+                    <a href=""><i class='bx bxl-gmail bx-sm hover:text-white' ></i></a>
+                    <a href=""><i class='bx bxl-linkedin bx-sm hover:text-white'></i></a>
+                    <a href=""><i class='bx bxl-github bx-sm hover:text-white' ></i></a>
+                    <a href=""><i class='bx bxl-twitter bx-sm hover:text-white'></i></a>
+                  </div>
+                </div>
+
+                <!--column2-->
+                <div class="flex justify-around space-x-32">
+
+                  <!--1st list-->
+                  <div class="flex flex-col space-y-3 text-thirdCol">
+                    <a href="#" class="hover:text-white">Home</a>
+                    <a href="#" class="hover:text-white">About</a>
+                    <a href="#" class="hover:text-white">Products</a>
+                    <a href="#" class="hover:text-white">Pricing</a>
+                  </div>
+
+                  <!--1st list-->
+                  <div class="flex flex-col space-y-3 text-thirdCol">
+                    <a href="#" class="hover:text-white">Careers</a>
+                    <a href="#" class="hover:text-white">Community</a>
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                  </div>
+                </div>
+
+                <!--Column 3-->
+                <div class="flex flex-col justify-between">
+                  <form>
+                    <div class="flex space-x-3">
+                      <input type="email" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Get Email Updates">
+                      <button class="bg-brightRed px-6 py-2 text-white hover:bg-brightRedLight rounded-full focus:outline-none">
+                        Go</button>
+                    </div>
+                  </form>
+
+                <!--Copyright-->
+                <div class="hidden text-white md:block">
+                  Copyright &copy; 2022, All right reserved
+                </div>
+
+                </div>
+
+              </div>
+
+            </footer>
+
+          <!--JavScript Arena-->
+          <script src="js/scripts.js" type="text/javascript"></script>
+
+
+</body>
+</html>

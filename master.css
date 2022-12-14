@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 #CTA{
-  /**background-image: url(../img/sub.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;**/
   background-image: -webkit-linear-gradient(left, #4facfe 0%, #00f2fe 100%);
   background-image: -o-linear-gradient(left, #4facfe 0%, #00f2fe 100%);
   background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
@@ -26,10 +23,19 @@ header,
   /**background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);**/
 }
 
+#banner2{
+
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/truck-driver3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  
+}
+
+
 .test3{
   background: #e2fdffff;
-  box-shadow:  20px 20px 60px #bebebe,
-             -20px -20px 60px #ffffff;
+  box-shadow:  18px 0 87px 0 rgb(10 15 70 / 7%);
 }
 
 /**HAMBURGER**/
